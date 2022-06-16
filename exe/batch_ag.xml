@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BatchRunner xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="batch_runner.xsd">
+	<ComponentSet name="Biochar">
+		<FileSet name="NoBiochar"> 
+		</FileSet>
+
+		<FileSet name="Biochar"> 
+         	<Value name = "energy_transformation_biochar">../input/gcamdata/xml/en_transformation_biochar.xml</Value>
+			<Value name = "carbon_storage_biochar">../input/extra/Cstorage_biochar.xml</Value>
+			<Value name = "biochar_ag_demand">../input/gcamdata/xml/biochar_ag_demand.xml</Value>
+			<Value name = "ag_base_biochar">../input/gcamdata/xml/biochar_ag_For_Past_bio_base_IRR_MGMT.xml</Value>
+			<Value name = "ag_cost_biochar">../input/gcamdata/xml/biochar_ag_cost_IRR_MGMT.xml</Value>
+			<Value name = "ag_prodchange_biochar">../input/gcamdata/xml/biochar_ag_prodchange_ref_IRR_MGMT.xml</Value>
+			<Value name = "residue_bio_biochar">../input/gcamdata/xml/biochar_resbio_input_IRR_MGMT.xml</Value>
+			<Value name = "fertilizer_biochar">../input/gcamdata/xml/biochar_ag_Fert_IRR_MGMT.xml</Value>
+			<Value name = "land5_biochar">../input/gcamdata/xml/biochar_land_input_5_IRR_MGMT.xml</Value>
+			<Value name = "ag_water_biochar">../input/gcamdata/xml/biochar_ag_water_input_IRR_MGMT.xml</Value>
+			<Value name = "co_products_biochar">../input/gcamdata/xml/biochar_co_products.xml</Value>
+		</FileSet>
+	</ComponentSet>
+
+	<ComponentSet name="CarbonPrice">
+		<FileSet name="_Reference"> 
+		</FileSet>
+
+		<FileSet name="_CarbonPrice10"> 
+		<Value name = "CarbonPrice10">../input/extra/carbon_price_10.xml</Value>
+		</FileSet>
+
+		<FileSet name="_CarbonPrice10Double"> 
+		<Value name = "CarbonPrice10_double">../input/extra/carbon_price_10_double.xml</Value>
+		</FileSet>
+
+		<FileSet name="_CarbonPrice2p6"> 
+		<Value name = "CarbonPrice2p6">../input/extra/carbon_price_2p6.xml</Value>
+		</FileSet>
+	</ComponentSet>
+	
+</BatchRunner>
+
+
